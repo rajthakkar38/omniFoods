@@ -1,0 +1,80 @@
+.price {
+  padding: 9.6rem 0;
+}
+
+.price-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: center;
+  line-height: 1.2;
+  padding: 0 0.6rem;
+}
+
+.price-list-atribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.price-card-containre {
+  text-align: center;
+}
+
+.price-card {
+  padding: 4rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  align-items: center;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 13px;
+  width: 75%;
+  border: 2px solid #fdf2e9;
+}
+
+.price-list-heading {
+  font-size: 4.4rem;
+  color: #333;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.price-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
+}
+
+.price-list-sub {
+  font-size: 1.6rem;
+}
+
+.extra {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.starter {
+  justify-self: end;
+}
+
+.extra::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}

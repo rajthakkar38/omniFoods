@@ -2,37 +2,111 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid-centre-v {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr;
+}
+
+.primary-heading {
+  font-size: 5.2rem;
+  color: #333;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  color: #333;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 9.6rem;
+}
+
+.sub-heading {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #cf7117;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  color: #fff;
+  background-color: #cf7117;
+}
+
+.btn-normal:link,
+.btn-normal:visited {
+  color: #555;
+  background-color: white;
+}
+
+.btn-normal:hover,
+.btn-normal:active {
+  color: #555;
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
